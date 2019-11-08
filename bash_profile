@@ -1,0 +1,15 @@
+red=$(tput setaf 160);
+green=$(tput setaf 118);
+cyan=$(tput setaf 14);
+white=$(tput setaf 15);
+bold=$(tput bold);
+reset=$(tput sgr0);
+#PS1="\[${bold}\]\n";
+PS1="\[${red}\]\u";
+PS1+="\[${white}\] @ ";
+PS1+="\[${red}\]\h";
+PS1+="\[${white}\] in ";
+PS1+="\[${green}\]\W";
+PS1+="\[${cyan}\] [\@]";
+PS1+="\n";
+PS1+="\[${white}\]\$ \[${reset}\]";
